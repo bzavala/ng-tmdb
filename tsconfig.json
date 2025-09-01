@@ -7,13 +7,25 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "ng-tmdb": [
+        "./dist/ng-tmdb"
+      ],
+      "ng-tmdb-lib": [
+        "./dist/ng-tmdb-lib"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "target": "ES2022",
-    "module": "preserve"
+    "module": "ES2022",
+    "moduleResolution": "node"
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
@@ -22,5 +34,19 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/ng-tmdb/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ng-tmdb/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.spec.json"
+    }
+  ]
 }
