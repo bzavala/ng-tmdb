@@ -1,6 +1,6 @@
-<p-card class="mb-2 p-card-w-full movie-card">
+<p-card class="mb-4 p-card-w-full movie-card">
   <div class="flex align-items-stretch">
-    <img [src]="movie().posterUrl" alt="{{ movie().title }}" class="w-200 h-auto mr-3" />
+    <img [src]="movie().smallPosterUrl" alt="{{ movie().title }}" class="h-auto mr-3" />
     <div class="p-card-content mt-0">
       <h3 class="my-0">{{ movie().title }}</h3>
       <div class="mb-1 text-sm">
@@ -13,9 +13,9 @@
         />
       </div>
       <p class="mb-8 pb-3">
-        {{ movie().overview | truncate : 150 }}
+        {{ movie().overview | truncate: 150 }}
         @if (movie().overview.length > 150) {
-        <a href="#" class="text-sm block">Read more</a>
+          <a href="#" class="text-sm block">Read more</a>
         }
       </p>
       <div class="view-details">
