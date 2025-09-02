@@ -1,0 +1,6 @@
+@if (!!title()) {
+  <h3>{{ title() }}</h3>
+}
+@for (movie of movies(); track movie.id) {
+  <app-movie-list-item [movie]="movie" />
+}

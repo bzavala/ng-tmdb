@@ -29,7 +29,12 @@
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
+    "@primeng/themes": "^20.0.1",
+    "@primeuix/themes": "^1.2.3",
     "ng-tmdb": "file:dist/ng-tmdb",
+    "primeflex": "^3.3.1",
+    "primeicons": "^7.0.0",
+    "primeng": "^20.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -46,6 +51,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^20.2.0",
+    "prettier": "^3.6.2",
     "standard-version": "^9.5.0",
     "typescript": "~5.8.2"
   }
