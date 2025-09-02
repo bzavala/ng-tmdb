@@ -29,8 +29,20 @@ export class MovieViewModel implements Movie {
     return NaN;
   }
 
-  get posterUrl(): string {
+  get tinyPosterUrl(): string {
+    return ImageHelper.getPosterUrl(PosterSize.W92, this.poster_path);
+  }
+
+  get smallPosterUrl(): string {
+    return ImageHelper.getPosterUrl(PosterSize.W154, this.poster_path);
+  }
+
+  get mediumPosterUrl(): string {
     return ImageHelper.getPosterUrl(PosterSize.W500, this.poster_path);
+  }
+
+  get largePosterUrl(): string {
+    return ImageHelper.getPosterUrl(PosterSize.W780, this.poster_path);
   }
 
   get backdropUrl(): string {
