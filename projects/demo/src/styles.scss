@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'primeflex/primeflex.css';
+@import 'primeicons/primeicons.css';
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.breadcrumbs,
+.breadcrumbs nav {
+  background-color: #654ea3;
+  ol {
+    li {
+      color: white;
+      a {
+        color: white;
+      }
+      span {
+        color: white;
+      }
+    }
+  }
+}
+
+.content {
+  background: linear-gradient(to bottom, #654ea3, #eaafc8);
+  height: 100vh;
+}

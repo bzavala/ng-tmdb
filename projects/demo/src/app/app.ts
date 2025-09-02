@@ -3,14 +3,11 @@ import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MovieService, MovieViewModel } from 'ng-tmdb';
 
-import { Breadcrumb } from 'primeng/breadcrumb';
 import { Card } from 'primeng/card';
-import { InputText } from 'primeng/inputtext';
-import { Menubar } from 'primeng/menubar';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, InputText, RouterOutlet, Card, Breadcrumb, Menubar],
+  imports: [CommonModule, RouterOutlet, Card],
   providers: [MovieService, MovieViewModel],
   templateUrl: './app.html',
   styleUrl: './app.scss',
