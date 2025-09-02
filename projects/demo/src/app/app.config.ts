@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
-import Lara from '@primeuix/themes/lara'; // or proper CSS pathimport { provideTmdb } from 'ng-tmdb';
+import Lara from '@primeuix/themes/lara';
 import { provideTmdb } from 'ng-tmdb';
 import { providePrimeNG } from 'primeng/config';
 import * as apiConfig from './api.config.json';
