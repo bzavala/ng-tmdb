@@ -1,6 +1,10 @@
 {
   "name": "ng-tmdb",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "description": "Angular library for querying The Movie Database (TMDB) API with typed models and view-models.",
   "keywords": [
     "angular",
@@ -10,7 +14,7 @@
     "api",
     "library"
   ],
-  "author": "Bob Zavala <your-email@example.com>",
+  "author": "Bob Zavala",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -20,6 +24,10 @@
     "url": "https://github.com/bzavala/ng-tmdb/issues"
   },
   "homepage": "https://github.com/bzavala/ng-tmdb#readme",
+  "scripts": {
+    "release": "standard-version",
+    "release:publish": "ng build ng-tmdb && npm run release && git push --follow-tags"
+  },
   "peerDependencies": {
     "@angular/common": ">=16.0.0 <21.0.0",
     "@angular/core": ">=16.0.0 <21.0.0",
